@@ -1,7 +1,7 @@
-<mat-selection-list #MacsList>
-  <mat-list-option *ngFor="let mac of macs">
-    <span>{{mac.name}}</span>
-    <span>{{mac.mac}}</span>
+<mat-selection-list class="list" #MacsList>
+  <mat-list-option class="item" *ngFor="let mac of macs">
+    <span>Name: {{mac.name}}</span>
+    <span>Nº Mac: {{mac.mac}}</span><br>
   </mat-list-option>
 
 </mat-selection-list>
