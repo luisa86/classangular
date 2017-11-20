@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MACS } from '../../mocks-macs'
 
 @Component({
   selector: 'app-macs',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./macs.component.scss']
 })
 export class MacsComponent implements OnInit {
+
+    macs = MACS;
 
   constructor() { }
 

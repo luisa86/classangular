@@ -1,2 +1,11 @@
-<button mat-raised-button color="primary">Primary</button>
-  
+<mat-selection-list #MacsList>
+  <mat-list-option *ngFor="let mac of macs">
+    <span>{{mac.name}}</span>
+    <span>{{mac.mac}}</span>
+  </mat-list-option>
+
+</mat-selection-list>
+
+<p>
+  Options selected: {{MacsList.selectedOptions.selected.length}}
+</p>
